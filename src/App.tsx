@@ -49,7 +49,7 @@ function App() {
       date: "2023",
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
       link: "https://courses.edx.org/certificates/e56cf3a1b85c46e085c1a73de1b1a0b5"
-    }
+    },
     {
       title: "SOFTWARE ENGINEER",
       issuer: "HACKER RANK",
