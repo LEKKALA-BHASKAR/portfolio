@@ -66,21 +66,21 @@ function App() {
     'JavaScript', 'React'
   ];
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-      <nav className="fixed top-0 w-full bg-gray-900/90 backdrop-blur-sm z-50 border-b border-gray-700">
+   return (
+    <div className="min-h-screen bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 text-gray-800">
+      <nav className="fixed top-0 w-full bg-indigo-600/90 backdrop-blur-sm z-50 border-b border-indigo-500 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="text-xl font-bold">Portfolio</span>
-            <div className="flex space-x-4">
+            <span className="text-2xl font-bold text-white">Portfolio</span>
+            <div className="flex space-x-6">
               {['about', 'certifications', 'projects'].map((section) => (
                 <button
                   key={section}
                   onClick={() => setActiveSection(section)}
-                  className={`px-3 py-2 rounded-md text-sm font-medium capitalize transition-colors
-                    ${activeSection === section 
-                      ? 'bg-blue-600 text-white' 
-                      : 'text-gray-300 hover:bg-gray-700'}`}
+                  className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors 
+                    ${activeSection === section
+                      ? 'bg-purple-600 text-white'
+                      : 'text-gray-200 hover:bg-indigo-500 hover:text-white'}`}
                 >
                   {section}
                 </button>
@@ -90,21 +90,21 @@ function App() {
         </div>
       </nav>
 
-      <main className="pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">
             LEKKALA BHASKAR
           </h1>
-          <p className="text-xl text-gray-300 mb-6">B.Tech Student & Full stack Developer</p>
+          <p className="text-xl text-gray-700 mb-6">B.Tech Student & Full Stack Developer</p>
           <div className="flex justify-center space-x-4">
-            <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github className="w-6 h-6" />
+            <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+              <Github className="w-7 h-7" />
             </a>
-            <a href="https://www.linkedin.com/in/LEKKALA-BHASKAR" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-6 h-6" />
+            <a href="https://www.linkedin.com/in/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="w-7 h-7" />
             </a>
-            <a href="mailto:bassnaidu1242@gmail.com" className="text-gray-300 hover:text-white transition-colors">
-              <Mail className="w-6 h-6" />
+            <a href="mailto:bassnaidu1242@gmail.com" className="text-gray-800 hover:text-black transition-colors">
+              <Mail className="w-7 h-7" />
             </a>
           </div>
         </div>
@@ -114,16 +114,16 @@ function App() {
             <div className="space-y-8 animate-fadeIn">
               <ProfileCard
                 title="About Me"
-                icon={<User className="w-6 h-6" />}
+                icon={<User className="w-6 h-6 text-purple-600" />}
                 content="I'm a passionate B.Tech student specializing in Computer Science & Engineering. With a strong foundation in multiple programming languages and a keen interest in software development, I'm constantly working on projects that challenge and enhance my skills. My experience ranges from Android development to data analysis, showcasing my versatility as a developer."
               />
               <ProfileCard
                 title="Technical Skills"
-                icon={<Code className="w-6 h-6" />}
+                icon={<Code className="w-6 h-6 text-purple-600" />}
                 content={
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {skills.map((skill) => (
-                      <span key={skill} className="bg-gray-700 rounded-full px-4 py-1 text-sm text-center">
+                      <span key={skill} className="bg-indigo-600 rounded-full px-4 py-1 text-sm text-white text-center">
                         {skill}
                       </span>
                     ))}
@@ -132,13 +132,13 @@ function App() {
               />
               <ProfileCard
                 title="Education"
-                icon={<BookOpen className="w-6 h-6" />}
+                icon={<BookOpen className="w-6 h-6 text-purple-600" />}
                 content={
                   <div className="space-y-4">
                     <div>
                       <h3 className="font-semibold">Bachelor of Technology</h3>
-                      <p className="text-gray-400">Computer Science & Engineering</p>
-                      <p className="text-gray-500">Currently Pursuing</p>
+                      <p className="text-gray-500">Computer Science & Engineering</p>
+                      <p className="text-gray-600">Currently Pursuing</p>
                     </div>
                   </div>
                 }
