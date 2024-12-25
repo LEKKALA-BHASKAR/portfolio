@@ -16,3 +16,32 @@
 .animate-fadeIn {
   animation: fadeIn 0.5s ease-out forwards;
 }
+
+/* Updated Colors */
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #ff7f7f, #ffe6e6);
+}
+
+.bg-white {
+  background-color: #f9f9f9;
+}
+
+.text-gray-900 {
+  color: #4a4a4a;
+}
+
+.text-gray-800 {
+  color: #333333;
+}
+
+.text-blue-600 {
+  color: #ff4d4d;
+}
+
+.bg-blue-50 {
+  background-color: #ffcccc;
+}
+
+.hover\:bg-blue-100:hover {
+  background-color: #ffe6e6;
+}
