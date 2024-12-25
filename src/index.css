@@ -45,3 +45,46 @@
 .hover\:bg-blue-100:hover {
   background-color: #dbeafe;
 }
+
+/* Dark Mode Styles */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #18181b;
+    --color-text: #e4e4e7;
+    --color-primary: #7c3aed;
+    --color-secondary: #6366f1;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  .bg-gradient-to-br {
+    background: linear-gradient(to bottom right, var(--color-primary), var(--color-secondary));
+  }
+
+  .bg-white {
+    background-color: #262626;
+  }
+
+  .text-gray-900 {
+    color: #f4f4f5;
+  }
+
+  .text-gray-800 {
+    color: #d4d4d8;
+  }
+
+  .text-blue-600 {
+    color: var(--color-primary);
+  }
+
+  .bg-blue-50 {
+    background-color: #3f3f46;
+  }
+
+  .hover\:bg-blue-100:hover {
+    background-color: #52525b;
+  }
+}
