@@ -95,7 +95,7 @@ function App() {
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
             LEKKALA BHASKAR
           </h1>
-          <p className="text-xl text-gray-300 mb-6">B.Tech Student & Software Developer</p>
+          <p className="text-xl text-gray-300 mb-6">B.Tech Student & Full stack Developer</p>
           <div className="flex justify-center space-x-4">
             <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-300 hover:text-white transition-colors" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6" />
