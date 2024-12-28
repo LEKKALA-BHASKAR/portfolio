@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, ExternalLink, Award, User, Code, Briefcase, BookOpen } from 'lucide-react';
+import { Github, Linkedin, Mail, User, Code, BookOpen } from 'lucide-react';
 import ProfileCard from './components/ProfileCard';
 import CertificationCard from './components/CertificationCard';
 import ProjectCard from './components/ProjectCard';
@@ -66,21 +66,21 @@ function App() {
     'JavaScript', 'React'
   ];
 
-   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 text-gray-800">
-      <nav className="fixed top-0 w-full bg-indigo-600/90 backdrop-blur-sm z-50 border-b border-indigo-500 shadow-lg">
+  return (
+    <div className="min-h-screen bg-white text-gray-900">
+      <nav className="fixed top-0 w-full bg-black text-white z-50 border-b border-gray-800 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <span className="text-2xl font-bold text-white">Portfolio</span>
+            <span className="text-2xl font-bold">Portfolio</span>
             <div className="flex space-x-6">
               {['about', 'certifications', 'projects'].map((section) => (
                 <button
                   key={section}
-                  onClick={() => setActiveSection(section)}
+                  onClick={() => setActiveSection(section )}
                   className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors 
                     ${activeSection === section
-                      ? 'bg-purple-600 text-white'
-                      : 'text-gray-200 hover:bg-indigo-500 hover:text-white'}`}
+                      ? 'bg-gray-800 text-white'
+                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`}
                 >
                   {section}
                 </button>
@@ -92,7 +92,7 @@ function App() {
 
       <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 to-purple-600">
+          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-black">
             LEKKALA BHASKAR
           </h1>
           <p className="text-xl text-gray-700 mb-6">B.Tech Student & Full Stack Developer</p>
@@ -114,16 +114,16 @@ function App() {
             <div className="space-y-8 animate-fadeIn">
               <ProfileCard
                 title="About Me"
-                icon={<User className="w-6 h-6 text-purple-600" />}
+                icon={<User  className="w-6 h-6 text-black" />}
                 content="I'm a passionate B.Tech student specializing in Computer Science & Engineering. With a strong foundation in multiple programming languages and a keen interest in software development, I'm constantly working on projects that challenge and enhance my skills. My experience ranges from Android development to data analysis, showcasing my versatility as a developer."
               />
               <ProfileCard
                 title="Technical Skills"
-                icon={<Code className="w-6 h-6 text-purple-600" />}
+                icon={<Code className="w-6 h-6 text-black" />}
                 content={
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                     {skills.map((skill) => (
-                      <span key={skill} className="bg-indigo-600 rounded-full px-4 py-1 text-sm text-white text-center">
+                      <span key={skill} className="bg-gray-800 rounded-full px-4 py-1 text-sm text-white text-center">
                         {skill}
                       </span>
                     ))}
@@ -132,7 +132,7 @@ function App() {
               />
               <ProfileCard
                 title="Education"
-                icon={<BookOpen className="w-6 h-6 text-purple-600" />}
+                icon={<BookOpen className="w-6 h-6 text-black" />}
                 content={
                   <div className="space-y-4">
                     <div>
