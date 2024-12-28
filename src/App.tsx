@@ -16,6 +16,13 @@ function App() {
       link: "https://www.linkedin.com/posts/lekkala-bhaskar_ineuron-intelligence-pvt-ltd-internship-activity-7258459600721440769-ck3j"
     },
     {
+      title: "React development",
+      issuer: "Tech Grow",
+      date: "2024",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kaashiv.com%2Finternship%2Freactjs&psig=AOvVaw0jAMoALbX6X2XXYRcgLzJM&ust=1735483683817000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMiT3NXayooDFQAAAAAdAAAAABAE",
+      link: "https://drive.google.com/file/d/1fJ5psxsh49IFi_7gWVH8mev0unt1-p2n/view?usp=drive_link"
+    },
+    {
       title: "Android App Development",
       issuer: "Android Studio",
       date: "2023",
