@@ -61,7 +61,7 @@ function App() {
       title: "SOFTWARE ENGINEER",
       issuer: "HACKER RANK",
       date: "2024",
-      image: "https://images.unsplash.com/photo-1555066991-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+      image: "images/SE.avif",
       link: "https://www.hackerrank.com/certificates/e976910fa4cf"
     }
   ];
