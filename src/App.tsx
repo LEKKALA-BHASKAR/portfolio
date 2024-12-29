@@ -102,19 +102,23 @@ function App() {
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-black">
             LEKKALA BHASKAR
           </h1>
-          <p className="text-xl text-gray-700 mb-6">B.Tech Student & Full Stack Developer</p>
           <div className="flex justify-center space-x-4">
-            <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github className="w-7 h-7" />
-            </a>
-            <a href="https://www.linkedin.com/in/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-7 h-7" />
-            </a>
-            <a href="mailto:bassnaidu1242@gmail.com" className="text-gray-800 hover:text-black transition-colors">
-              <Mail className="w-7 h-7" />
-            </a>
-          </div>
-        </div>
+  <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+    <Github className="w-7 h-7" />
+  </a>
+  <a href="https://www.linkedin.com/in/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+    <Linkedin className="w-7 h-7" />
+  </a>
+  <a href="mailto:bassnaidu1242@gmail.com" className="text-gray-800 hover:text-black transition-colors">
+    <Mail className="w-7 h-7" />
+  </a>
+  <a href="https://www.instagram.com/syntax__error__18/" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm8.5 1.5h-8.5a4.25 4.25 0 00-4.25 4.25v8.5a4.25 4.25 0 004.25 4.25h8.5a4.25 4.25 0 004.25-4.25v-8.5a4.25 4.25 0 00-4.25-4.25zm-4.25 3a5 5 0 100 10 5 5 0 000-10zm5.375-1.125a1.125 1.125 0 110 2.25 1.125 1.125 0 010-2.25zm-5.375 2.625a3.375 3.375 0 110 6.75 3.375 3.375 0 010-6.75z" />
+    </svg>
+  </a>
+</div>
+</div>
 
         <div className="grid gap-8">
           {activeSection === 'about' && (
