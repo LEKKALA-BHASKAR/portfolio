@@ -1,15 +1,7 @@
-import React from 'react';
-import { Award, ExternalLink } from 'lucide-react';
+import React from "react";
+import { Award, ExternalLink } from "lucide-react";
 
-interface CertificationCardProps {
-  title: string;
-  issuer: string;
-  date: string;
-  image: string;
-  link: string;
-}
-
-const CertificationCard: React.FC<CertificationCardProps> = ({ title, issuer, date, image, link }) => {
+const CertificationCard = ({ title, issuer, date, image, link }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition-all transform hover:-translate-y-2">
       <div className="h-48 overflow-hidden">
