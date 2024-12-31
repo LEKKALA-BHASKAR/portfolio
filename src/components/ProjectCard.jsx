@@ -1,14 +1,7 @@
-import React from 'react';
-import { Github, ExternalLink } from 'lucide-react';
+import React from "react";
+import { Github, ExternalLink } from "lucide-react";
 
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  githubUrl: string;
-}
-
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, image, githubUrl }) => {
+const ProjectCard = ({ title, description, image, githubUrl }) => {
   return (
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">
       <div className="h-48 overflow-hidden">
