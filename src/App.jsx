@@ -185,7 +185,7 @@ function App() {
               />
               <ProjectCard
                 title="Intern management System created with team for IISPPR"
-                description=""
+                description="team made project"
                 image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
                 githubUrl="scaleindia.org.in"
               />
