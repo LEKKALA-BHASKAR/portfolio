@@ -172,16 +172,28 @@ function App() {
                 githubUrl="https://github.com/LEKKALA-BHASKAR"
               />
               <ProjectCard
-                title="Data Analysis Projects"
-                description="Python-based data analysis and visualization projects"
+                title="SeminarHallBookingSystem"
+                description="web-based Seminar Hall Booking System projects"
                 image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                githubUrl="https://github.com/LEKKALA-BHASKAR"
+                githubUrl="https://seminar-hall-booking-system-qall.vercel.app"
               />
               <ProjectCard
                 title="Portfolio Website"
                 description="Personal portfolio built with React and Tailwind CSS"
                 image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                githubUrl="https://github.com/LEKKALA-BHASKAR"
+                githubUrl="https://profile-overview.vercel.app/"
+              />
+              <ProjectCard
+                title="Intern management System created with team for IISPPR"
+                description=""
+                image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                githubUrl="scaleindia.org.in"
+              />
+              <ProjectCard
+                title="Quizz app"
+                description="test your technical knowledge "
+                image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                githubUrl="quiz-app-green-gamma.vercel.app"
               />
             </div>
           )}
