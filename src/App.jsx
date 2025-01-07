@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { Github, Linkedin, Mail, User, Code, BookOpen } from 'lucide-react';
-import ProfileCard from './components/ProfileCard';
-import CertificationCard from './components/CertificationCard';
-import ProjectCard from './components/ProjectCard';
+import Navigation from './components/Navigation';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
 
 function App() {
   const [activeSection, setActiveSection] = useState('about');
@@ -75,129 +74,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
-      <nav className="fixed top-0 w-full bg-black text-white z-50 border-b border-gray-800 shadow-lg">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <span className="text-2xl font-bold">Portfolio</span>
-            <div className="flex space-x-6">
-              {['about', 'certifications', 'projects'].map((section) => (
-                <button
-                  key={section}
-                  onClick={() => setActiveSection(section )}
-                  className={`px-4 py-2 rounded-md text-sm font-semibold transition-colors 
-                    ${activeSection === section
-                      ? 'bg-gray-800 text-white'
-                      : 'text-gray-300 hover:bg-gray-700 hover:text-white'}`}
-                >
-                  {section}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
-
+      <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-black">
-            LEKKALA BHASKAR
-          </h1>
-          <div className="flex justify-center space-x-4">
-            <a href="https://github.com/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
-              <Github className="w-7 h-7" />
-            </a>
-            <a href="https://www.linkedin.com/in/LEKKALA-BHASKAR" className="text-gray-800 hover:text-black transition-colors" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="w-7 h-7" />
-            </a>
-            <a href="mailto:bassnaidu1242@gmail.com" className="text-gray-800 hover:text-black transition-colors">
-              <Mail className="w-7 h-7" />
-            </a>
-          </div>
-        </div>
-
-        <div className="grid gap-8">
-          {activeSection === 'about' && (
-            <div className="space-y-8 animate-fadeIn">
-              <ProfileCard
-                title="About Me"
-                icon={<User  className="w-6 h-6 text-black" />}
-                content="I'm a passionate B.Tech student specializing in Computer Science & Engineering. With a strong foundation in multiple programming languages and a keen interest in software development, I'm constantly working on projects that challenge and enhance my skills. My experience ranges from Android development to data analysis, showcasing my versatility as a developer."
-              />
-              <ProfileCard
-                title="Technical Skills"
-                icon={<Code className="w-6 h-6 text-black" />}
-                content={
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                    {skills.map((skill) => (
-                      <span key={skill} className="bg-gray-800 rounded-full px-4 py-1 text-sm text-white text-center">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                }
-              />
-              <ProfileCard
-                title="Education"
-                icon={<BookOpen className="w-6 h-6 text-black" />}
-                content={
-                  <div className="space-y-4">
-                    <div>
-                      <h3 className="font-semibold">Bachelor of Technology</h3>
-                      <p className="text-gray-500">Computer Science & Engineering</p>
-                      <p className="text-gray-600">Currently Pursuing</p>
-                    </div>
-                  </div>
-                }
-              />
-            </div>
-          )}
-
-          {activeSection === 'certifications' && (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fadeIn">
-              {certifications.map((cert, index) => (
-                <CertificationCard
-                  key={index}
-                  {...cert}
-                />
-              ))}
-            </div>
-          )}
-
-          {activeSection === 'projects' && (
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 animate-fadeIn">
-              <ProjectCard
-                title="Android Development"
-                description="Mobile application development using Android Studio"
-                image="https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?auto=format&fit=crop&w=800&q=80"
-                githubUrl="https://github.com/LEKKALA-BHASKAR"
-              />
-              <ProjectCard
-                title="SeminarHallBookingSystem"
-                description="web-based Seminar Hall Booking System projects"
-                image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
-                githubUrl="https://seminar-hall-booking-system-qall.vercel.app"
-              />
-              <ProjectCard
-                title="Portfolio Website"
-                description="Personal portfolio built with React and Tailwind CSS"
-                image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                githubUrl="https://profile-overview.vercel.app/"
-              />
-              <ProjectCard
-                title="Intern management System created with team for IISPPR"
-                description="team made project"
-                image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                githubUrl="scaleindia.org.in"
-              />
-              <ProjectCard
-                title="Quizz app"
-                description="test your technical knowledge "
-                image="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                githubUrl="quiz-app-green-gamma.vercel.app"
-              />
-            </div>
-          )}
-        </div>
+        <Header />
+        <MainContent 
+          activeSection={activeSection}
+          certifications={certifications}
+          skills={skills}
+        />
       </main>
     </div>
   );
